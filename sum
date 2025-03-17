@@ -1,0 +1,6 @@
+variable1=$1
+variable2=$2
+
+sum=$(($variable1+$variable2))
+
+echo "The sum of the total is : $sum"
