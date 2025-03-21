@@ -1,0 +1,18 @@
+ID=$(id -u)
+
+if [ $ID -ne 0 ]
+then 
+   echo " ERROR : ensure run in root priviligers"
+   exit 1
+else 
+   echo "ur root user"
+fi
+
+yyum install mysql -y
+
+if [ $? -ne 0 ];
+then 
+  echo "ERROR while downloading"
+else
+  echo "mysql is installed"
+fi 

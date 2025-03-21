@@ -1,4 +1,4 @@
-i# !#/bin/bash
+#!/bin/bash
 FRUIT=("mango" "apple" "goa")
 echo "first value is ${FRUIT[0]}"
 echo "second value is ${FRUIT[1]}"
